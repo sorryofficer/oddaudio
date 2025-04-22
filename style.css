@@ -108,9 +108,11 @@ button {
 button:hover {
   background: #b2ecfa;
 }
+
+/* Hero Section */
 .hero {
   position: relative;
-  background-image: url('images/your-background.jpg');
+  background-image: url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -147,4 +149,3 @@ button:hover {
   font-size: 1.25rem;
   color: #ccc;
 }
-

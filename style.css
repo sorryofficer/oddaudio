@@ -111,9 +111,8 @@ button:hover {
 
 /* Hero Section */
 .hero {
-  position: relative;
   background-image: url('images/hero-bg.jpg');
-  background-size: cover;
+  border: 5px solid hotpink;    /* <- temporary debug */
   background-position: center;
   height: 100vh;
   display: flex;

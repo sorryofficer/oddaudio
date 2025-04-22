@@ -1,13 +1,14 @@
 body {
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
   background: #111;
-  color: #eee;
+  color: #ddd;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 nav {
-  background: #222;
+  background: #1a1a1a;
   padding: 1em;
   text-align: center;
 }
@@ -15,7 +16,8 @@ nav {
 nav a {
   margin: 0 1em;
   text-decoration: none;
-  color: #ffa500;
+  color: #aaa;
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -26,4 +28,23 @@ main {
   padding: 2em;
   max-width: 800px;
   margin: auto;
+}
+
+h1, h2 {
+  color: #f0f0f0;
+  margin-top: 0;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #555;
 }

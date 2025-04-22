@@ -113,7 +113,6 @@ button:hover {
 .hero {
   position: relative;
   background-image: url('images/hero-bg.jpg');
-  border: 5px solid hotpink;    /* <- temporary debug */
   background-position: center;
   height: 100vh;
   display: flex;

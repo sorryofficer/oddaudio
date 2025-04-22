@@ -5,7 +5,8 @@
   --accent-color: #8fd3f4;
   --card-bg: #1a1a1a;
   --hover-bg: #2a2a2a;
-  --font-main: 'Inter', system-ui, courier;
+-  --font-main: 'Inter', system-ui, sans-serif;
++  --font-main: 'JetBrains Mono', monospace;
 }
 
 * {

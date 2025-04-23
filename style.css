@@ -20,8 +20,8 @@ body {
   grid-template-columns: 200px 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
-  background: #f1f1f1;
-  color: #202124;
+  background: #FFF2E5;
+  color: #5D4037;
   line-height: 1.5;
 }
 
@@ -42,7 +42,7 @@ nav {
 
 nav a {
   font-family: 'Roboto Mono', monospace;
-  color: #202124;
+  color: #E64A19;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -57,7 +57,7 @@ header.hero {
   grid-row: 1;
   position: relative;
   padding: 2rem;
-  background: #ffffff;
+  background: #FFB85F;
 }
 
 header.hero .overlay {
@@ -112,11 +112,12 @@ p {
 
 /* ─── Links ────────────────────────────────────────────────────────────── */
 a, a:visited {
-  color: #4285F4;
+  color: #F040C2;
   text-decoration: none;
 }
 
 a:hover {
+  color: #FFE0B2;
   text-decoration: underline;
 }
 

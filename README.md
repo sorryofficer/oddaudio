@@ -1,18 +1,17 @@
-# Odd Audio Labs Template
+# Odd Audio Labs 
 
-This template includes:
+This site is suppose to have:
 
-- `index.html`: Homepage with hero background (replace `images/hero-bg.jpg`).
+- `index.html`: Homepage.
 - `about.html`: About page.
-- `gallery.html`: Gallery page (replace gallery images).
+- `gallery.html`: Gallery page.
 - `blog.html`: Blog page.
 - `store.html`: Store page.
 - `style.css`: Main stylesheet.
-- `images/`: Folder to add your images:
+- `images/`: Folder for images:
   - hero-bg.jpg
   - sampler.jpg
   - glitchbox.jpg
   - gallery1.jpg
   - gallery2.jpg
 
-To use: upload to your GitHub repo root. Adjust images and content as needed.

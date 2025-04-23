@@ -32,7 +32,7 @@ nav {
   grid-row: 1 / span 2;
   position: sticky;
   top: 0;
-  background: #1E1E1E;
+  background: #FF7043;
   border-right: 1px solid #ccc;
   padding: 2rem 1rem;
   display: flex;
@@ -94,7 +94,7 @@ main {
 
 /* ─── Typography ───────────────────────────────────────────────────────── */
 h1, h2 {
-  color: #FF7043;
+  color: #1E1E1E;
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
   line-height: 1.25;

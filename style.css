@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 .roboto-mono-<uniquifier> {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-}
 /* ─── Base & Resets ────────────────────────────────────────────────────────── */
 * {
   box-sizing: border-box;
@@ -13,7 +11,7 @@
   padding: 0;
 }
 html {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Roboto Mono, Arial, sans-serif;
   font-size: 18px;
   scroll-behavior: smooth;
   background: #f1f1f1;

@@ -1,194 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-.roboto-mono-<uniquifier> {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-/* ─── Base & Resets ────────────────────────────────────────────────────────── */
+/* ─── Import Google Fonts ───────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+/* ─── Base Reset & Layout ────────────────────────────────────────────────── */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
-  font-family: Roboto Mono, Arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   scroll-behavior: smooth;
-  background: #f1f1f1;
-  color: #202124;
-}
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  text-transform: lowercase;
-  margin: 0 auto;
-}
-a, a:visited {
-  color: #4285F4;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-img {
-  width: 100%;
-  display: block;
+  height: 100%;
 }
 
-/* ─── Typography ──────────────────────────────────────────────────────────── */
+body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  background: #f1f1f1;
+  color: #202124;
+  line-height: 1.5;
+}
+
+/* ─── Sidebar Nav ───────────────────────────────────────────────────────── */
+nav {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  position: sticky;
+  top: 0;
+  background: #f1f1f1;
+  border-right: 1px solid #ccc;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav a {
+  font-family: 'Roboto Mono', monospace;
+  color: #202124;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Hero Section ─────────────────────────────────────────────────────── */
+header.hero {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+header.hero .overlay {
+  /* If you have a background image you can darken it here:
+     position: absolute;
+     top: 0; left: 0; right: 0; bottom: 0;
+     background: rgba(0,0,0,0.3);
+  */
+}
+
+header.hero .hero-content {
+  position: relative;
+  max-width: 600px;
+}
+
+header.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+header.hero p {
+  font-size: 1rem;
+}
+
+/* ─── Main Content ──────────────────────────────────────────────────────── */
+main {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 2rem;
+}
+
+/* ─── Typography ───────────────────────────────────────────────────────── */
 h1, h2 {
   font-weight: 600;
   line-height: 1.25;
   margin-bottom: 0.5rem;
 }
-h1 { font-size: 32px; letter-spacing: .004em; }
-h2 { font-size: 1.3rem; letter-spacing: .009em; }
-p { margin-bottom: 1rem; }
-ul { list-style: none; margin: 1rem 0; }
-code, pre { 
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  background-color: #e2e2e2; 
-  color: #1b1b1b;
-  border-radius: 3px;
-}
-pre {
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1em;
-  line-height: 1.45;
-}
-pre code { background: transparent; display: inline; padding: 0; }
 
-/* ─── Layout Utilities ────────────────────────────────────────────────────── */
-.limiter {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.pad2y {
-  padding: 20px 0;
-}
-.no-print { display: block; }
-.only-print { display: none; }
-
-/* ─── Header & Nav ───────────────────────────────────────────────────────── */
-.header-wrap {
-  font-size: 0.9em;
-  border-bottom: 1px solid #000;
-}
-.header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.header ul {
-  display: flex;
-  gap: 1em;
-  align-items: center;
-}
-.header ul li { list-style: none; }
-.header a { font-family: 'Roboto Mono', monospace; }
-.header a strong { line-height: 1.6; font-size: 1rem; font-weight: bold; }
-
-/* ─── Search Field ───────────────────────────────────────────────────────── */
-#searchfield {
-  width: 4em;
-  font-size: 1rem;
-  padding: 0.25em;
-  border: 1px solid #bdc1c6;
-  font-family: 'Roboto Mono', monospace;
+h1 {
+  font-size: 2rem;
 }
 
-/* ─── Project Grid ───────────────────────────────────────────────────────── */
-.project-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin: 2em 0;
+h2 {
+  font-size: 1.3rem;
 }
-.project a {
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ─── Links ────────────────────────────────────────────────────────────── */
+a, a:visited {
+  color: #4285F4;
   text-decoration: none;
-  color: inherit;
-  display: block;
-  text-align: center;
 }
-.project img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.5em;
-}
-.project strong { display: block; margin-bottom: 0.25em; }
-.project span { font-size: 0.9em; color: #555; }
 
-/* ─── Footer ─────────────────────────────────────────────────────────────── */
-footer {
-  text-align: right;
-  margin: 2em 0;
-  font-size: 0.9em;
+a:hover {
+  text-decoration: underline;
 }
-footer a { color: inherit; }
 
-/* ─── Responsive Breakpoints ────────────────────────────────────────────── */
-@media screen and (max-width: 1024px) {
-  .header-wrap { position: relative; }
-}
+/* ─── Responsive: collapse to single column on small screens ──────────── */
 @media screen and (max-width: 700px) {
-  .project-box { grid-template-columns: repeat(2, 1fr); gap: 15px; }
-  .hideifmobile { display: none; }
-}
-@media screen and (max-width: 500px) {
-  .project-box { grid-template-columns: 1fr; gap: 35px; }
-  .hideifmobile2 { display: none; }
-  html * { font-size: 0.8rem !important; }
-}
-@media screen and (min-width: 1025px) {
-  .header {
-    position: fixed;
-    top: 2em;
-    right: 50%;
-    margin-right: 340px;
-    border-right: 1.5px solid #777;
-    letter-spacing: -.009em;
+  body {
+    display: block;
   }
-  .content h1:first-child { margin-top: 0; }
+  nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+  }
+  header.hero,
+  main {
+    padding: 1rem;
+  }
 }
 
-/* ─── Print Styles ───────────────────────────────────────────────────────── */
+/* ─── Print Styles ─────────────────────────────────────────────────────── */
 @media print {
-  .no-print { display: none; }
-  .only-print { display: block; }
-  body { margin: 0; }
-  .limiter {
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  nav {
+    display: none;
   }
-}
-
-/* ─── Dark Mode ─────────────────────────────────────────────────────────── */
-body.dark, .dark .nolinkcolor a, .dark input, .dark textarea, .dark button {
-  background: #202124;
-  color: #bdc1c6;
-}
-.dark svg { stroke: #bdc1c6; }
-.dark .header-wrap { border-bottom: 1px solid #bdc1c6; }
-.dark img { filter: grayscale(1) brightness(0.8); }
-.dark pre, .dark code {
-  background-color: #303134;
-  color: #dde1e6;
-}
-
-/* ─── Utility Classes ───────────────────────────────────────────────────── */
-.fr { float: right; }
-.bordered {
-  background: #e2e2e2;
-  padding: 1em;
-  border-radius: 1.5em;
-  margin-bottom: 1em;
-}
-blockquote {
-  font-style: italic;
-  border-left: 10px solid #ccc;
-  padding: 0.5em 1em;
+  header.hero .overlay {
+    display: none;
+  }
+  header.hero,
+  main {
+    padding: 0;
+  }
 }

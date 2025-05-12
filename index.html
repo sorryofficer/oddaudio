@@ -2,29 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Odd Audio Labs</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: monospace;
+      background: black;
+      color: white;
+      height: 100%;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('your-hero-image.jpg') center center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .hero-buttons a {
+      display: inline-block;
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    .hero-buttons a:hover {
+      background: white;
+      color: black;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="blog.html">Blog</a>
-    <a href="store.html">Store</a>
-  </nav>
 
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Odd Audio Labs</h1>
-      <p>Experimental circuits. Audio oddities. Signals that shouldn’t exist.</p>
-    </div>
+  <header>
+    <div><strong>Odd Audio Labs</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Gear + Oddities</a>
+      <a href="#">Studio + Services</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <h2>Welcome</h2>
-    <p>We build the tools we wish existed. DIY gear, sound warpers, and chaos-on-a-chip ideas for sonic weirdos.</p>
-  </main>
+  <div class="hero">
+    <h1>Odd Audio Labs</h1>
+    <div class="hero-buttons">
+      <a href="#">Gear + Oddities</a>
+      <a href="#">Studio + Services</a>
+    </div>
+  </div>
+
 </body>
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Odd Audio Labs</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: monospace;
+      background: black;
+      color: white;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+    .content {
+      padding: 8rem 2rem 4rem;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      background: #222;
+      border: 1px solid #555;
+      color: white;
+      font-family: monospace;
+    }
+    form button {
+      padding: 1rem 2rem;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    form button:hover {
+      background: white;
+      color: black;
+    }
+    footer {
+      padding: 4rem 2rem;
+      text-align: center;
+      font-size: 1rem;
+      background: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Odd Audio Labs</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gear-oddities.html">Gear + Oddities</a>
+      <a href="studio-services.html">Studio + Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Contact Us</h1>
+    <p>Let's talk about your gear, your project, or your weird audio idea. We'll respond fast and give you a clear, no-BS plan of attack.</p>
+    <form action="mailto:youremail@domain.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #888;">Or email us directly at: <a href="mailto:youremail@domain.com" style="color:white; text-decoration:underline;">youremail@domain.com</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Odd Audio Labs. All rights reserved.
+  </footer>
+
+</body>
+</html>

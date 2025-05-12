@@ -11,7 +11,6 @@
       font-family: monospace;
       background: black;
       color: white;
-      height: 100%;
     }
     header {
       position: fixed;
@@ -57,6 +56,47 @@
       background: white;
       color: black;
     }
+    .section {
+      padding: 6rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .quick-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .quick-links a {
+      display: inline-block;
+      border: 2px solid white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s, color 0.3s;
+    }
+    .quick-links a:hover {
+      background: white;
+      color: black;
+    }
+    footer {
+      padding: 4rem 2rem;
+      text-align: center;
+      font-size: 1rem;
+      background: #111;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
@@ -67,7 +107,7 @@
       <a href="index.html">Home</a>
       <a href="gear-oddities.html">Gear + Oddities</a>
       <a href="studio-services.html">Studio + Services</a>
-      <a href="#">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -78,6 +118,32 @@
       <a href="studio-services.html">Studio + Services</a>
     </div>
   </div>
+
+  <section class="section">
+    <h2>What We Do</h2>
+    <p>Odd Audio Labs builds, repairs, and deploys audio gear and systems. Whether it's a synth mod, a recording van, or a home AV install—we handle the weird and the precise.</p>
+  </section>
+
+  <section class="section">
+    <h2>Explore</h2>
+    <div class="quick-links">
+      <a href="gear-oddities.html">Gear Gallery</a>
+      <a href="studio-services.html">Studio Services</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Let's Make Some Noise</h2>
+    <p>Curious? Let's talk about your project. We respond fast. Click below to start the conversation.</p>
+    <div class="quick-links">
+      <a href="contact.html">Get In Touch</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Odd Audio Labs. All rights reserved.
+  </footer>
 
 </body>
 </html>
